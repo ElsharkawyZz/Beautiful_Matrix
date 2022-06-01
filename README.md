@@ -1,28 +1,29 @@
 Beautiful_Matrix
 
-using System;
-					
-public class Program
+#include <bits/stdc++.h>
+#include <ctime>
+using namespace std;
+
+int main()
 {
-	public static void Main()
-	{
-		int[,]matrix=new int[5,5];
-		
-		int count=0;
-		for(int i=0;i<5;i++)
-		{
-		  for(int j=0;j<5;j++)
-		 {
-		     matrix[i,j]=int.Parse(Console.ReadLine());
-		  
-			  if(matrix[i,j]==1)
-			  {
-			    count+=Math.Abs(i-2)+Math.Abs(j-2);
-				  break;
-			  }
-		 
-		  }
-		}
-		Console.WriteLine(count);
-	}
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int matrix[5][5];
+    int num1 = 0, num2 = 0;
+
+    for (int i = 0; i< 5; i++)
+    {
+        for (int j = 0; j< 5; j++)
+        {
+            cin>>matrix[i][j];
+            if(arr[i][j]==1)
+            {
+                num1=i;  num2 = j ;
+            }
+        }
+    }
+    int u = abs((num1 - 2)) + abs((num2 - 2));
+cout<<u<<"\n";
+    return 0;
 }
